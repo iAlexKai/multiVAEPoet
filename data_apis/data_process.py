@@ -178,7 +178,8 @@ def prepare_poem(data, train_lens, val_lens, test_lens, type=1):
     """
     convert poems to training pairs
     """
-    Data = dict()
+    from collections import defaultdict
+    Data = defaultdict(list)
     train_data = data[:train_lens]  # 取前train_lens个数据
     valid_data = data[train_lens:train_lens+val_lens]  # 取接下来val_lens个数据
     test_data = data[-test_lens:]  # 取后test_lens个数据
@@ -291,11 +292,22 @@ def prepare_poem(data, train_lens, val_lens, test_lens, type=1):
                                list(poem[1])[int(len(list(poem[1])) / 2):], list(poem[2])[:int(len(list(poem[2])) / 2)],
                                list(poem[2])[int(len(list(poem[2])) / 2):]])
 
-    Data['train'] = train_s
-    Data['valid'] = valid_s
+    name_dict = {'2': 'pos', '1': 'neu', '0': 'neg'}
+    for item in train_s:
+        sent = item[-1][0]
+        Data['train_{}'.format(name_dict[sent])].append(item)
+    for item in valid_s:
+        sent = item[-1][0]
+        Data['valid_{}'.format(name_dict[sent])].append(item)
     Data['test'] = test_s
     # import pdb
     # pdb.set_trace()
+    import random
+    for name in ['pos', 'neu' , 'neg']:
+        random.shuffle(Data['train_{}'.format(name)])
+        random.shuffle(Data['valid_{}'.format(name)])
+        Data['train_{}'.format(name)] = Data['train_{}'.format(name)][:70000]
+        Data['valid_{}'.format(name)] = Data['train_{}'.format(name)][:2000]
     return Data    
 
 

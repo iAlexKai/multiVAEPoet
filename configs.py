@@ -15,7 +15,7 @@ class Config(object):
     noise_radius = 0.2  # stdev of noise for autoencoder (regularizer)
 
     z_size = 400  # dimension of z # 300 performs worse
-    full_kl_step = 10000
+    full_kl_step = 100000
 
     init_weight = 0.02   # uniform random from [-init_w, init_w]
     # lambda_gp = 10  # Gradient penalty lambda hyperparameter.  调小 调大,控制penalty的倍数
@@ -48,6 +48,6 @@ class Config(object):
     temp_size = 800
 
     # Model reload
-    reload_model = False
-    model_name = 'model_global_t_13596_epoch3.pckl'
+    reload_model = True
+    model_name = 'output/trainVAE/202101231504/pretrain_model_global_t_18750_epoch9.pckl'
 

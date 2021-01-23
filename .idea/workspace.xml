@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36cf51ce-5b07-4cf4-8116-964ae0644701" name="Default Changelist" comment="" />
+    <list default="true" id="36cf51ce-5b07-4cf4-8116-964ae0644701" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/configs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_apis/corpus.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_apis/corpus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_apis/data_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_apis/data_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_apis/data_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_apis/data_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/multiVAE.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/multiVAE.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,16 +18,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.3041543">
+    <splitter split-orientation="horizontal" split-proportion="0.15417868">
       <split-first>
         <leaf>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/modules.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="297" column="24" selection-start-line="297" selection-start-column="24" selection-end-line="297" selection-end-column="24" />
+                <state relative-caret-position="422">
+                  <caret line="147" column="31" selection-start-line="147" selection-start-column="25" selection-end-line="147" selection-end-column="31" />
                   <folding>
                     <element signature="e#2068#4821#0" />
+                    <element signature="e#14045#19077#0" />
                   </folding>
                 </state>
               </provider>
@@ -27,17 +37,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/helper.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="499">
-                  <caret line="145" lean-forward="true" selection-start-line="145" selection-end-line="145" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/data/sentiment_data/positive.txt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-90">
-                  <caret line="51999" column="8" selection-start-line="51999" selection-start-column="8" selection-end-line="51999" selection-end-column="8" />
+                <state relative-caret-position="126">
+                  <caret line="215" column="18" lean-forward="true" selection-start-line="215" selection-start-column="18" selection-end-line="215" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
@@ -45,10 +46,27 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/train.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="378">
-                  <caret line="269" column="24" lean-forward="true" selection-start-line="269" selection-start-column="24" selection-end-line="269" selection-end-column="24" />
+                <state relative-caret-position="270">
+                  <caret line="549" column="20" lean-forward="true" selection-start-line="549" selection-start-column="20" selection-end-line="549" selection-end-column="20" />
                   <folding>
                     <element signature="e#0#15#0" expanded="true" />
+                    <element signature="e#8439#11431#0" />
+                    <element signature="e#20240#21338#0" />
+                    <element signature="e#21382#21749#0" />
+                    <element signature="e#20705#21449#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/models/multiVAE.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="462">
+                  <caret line="339" column="64" selection-start-line="339" selection-start-column="17" selection-end-line="339" selection-end-column="64" />
+                  <folding>
+                    <element signature="e#0#12#0" expanded="true" />
+                    <element signature="e#4754#4830#0" />
                   </folding>
                 </state>
               </provider>
@@ -57,8 +75,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/configs.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="487">
-                  <caret line="39" column="18" lean-forward="true" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+                <state relative-caret-position="239">
+                  <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
@@ -68,15 +86,45 @@
       <split-second>
         <leaf>
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/data_apis/data_process.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="348">
+                  <caret line="327" column="22" selection-start-line="327" selection-start-column="22" selection-end-line="327" selection-end-column="22" />
+                  <folding>
+                    <element signature="e#194#1227#0" />
+                    <element signature="e#2943#3539#0" />
+                    <element signature="e#3580#5587#0" />
+                    <element signature="e#5659#13349#0" />
+                    <element signature="e#5659#5706#1" />
+                    <element signature="e#5995#8952#0" />
+                    <element signature="e#9035#12652#0" />
+                    <element signature="e#12792#12879#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/data_apis/corpus.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="186">
-                  <caret line="171" column="22" selection-start-line="171" selection-start-column="6" selection-end-line="171" selection-end-column="22" />
+                <state relative-caret-position="315">
+                  <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
                   <folding>
                     <element signature="e#24#44#0" expanded="true" />
                     <element signature="e#1449#1956#0" />
                     <element signature="e#2890#3192#0" />
-                    <element signature="e#4214#4581#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/train.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1971">
+                  <caret line="276" column="28" selection-start-line="276" selection-start-column="28" selection-end-line="276" selection-end-column="28" />
+                  <folding>
+                    <element signature="e#0#15#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -85,8 +133,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/data_apis/data_utils.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="387">
-                  <caret line="66" column="26" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
+                <state relative-caret-position="792">
+                  <caret line="168" column="39" selection-start-line="168" selection-start-column="39" selection-end-line="168" selection-end-column="39" />
                 </state>
               </provider>
             </entry>
@@ -94,29 +142,11 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/models/multiVAE.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="385">
-                  <caret line="93" column="64" selection-start-line="93" selection-start-column="64" selection-end-line="93" selection-end-column="64" />
+                <state relative-caret-position="467">
+                  <caret line="307" column="45" lean-forward="true" selection-start-line="307" selection-start-column="45" selection-end-line="307" selection-end-column="45" />
                   <folding>
                     <element signature="e#0#12#0" expanded="true" />
-                    <element signature="e#5146#7215#0" />
-                    <element signature="e#7292#9204#0" />
-                    <element signature="e#13967#16964#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/models/cvae.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="327">
-                  <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
-                  <folding>
-                    <element signature="e#0#12#0" expanded="true" />
-                    <element signature="e#6079#10143#0" />
-                    <element signature="e#10266#13439#0" />
-                    <element signature="e#13561#15424#0" />
-                    <element signature="e#15495#16371#0" />
+                    <element signature="e#4754#4830#0" />
                   </folding>
                 </state>
               </provider>
@@ -135,36 +165,40 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>mu</find>
-      <find>_vae</find>
-      <find>multiVAE</find>
-      <find>self.vocab[</find>
-      <find>self.vocab</find>
-      <find>get_tokenized_poem_corpus</find>
-      <find>pretrain_data_dir</find>
-      <find>汉庭</find>
-      <find>pdb.set</find>
-      <find>embedder</find>
-      <find>init_w</find>
-      <find>_prepare_batch</find>
-      <find>lr_ae</find>
-      <find>self.init_decoder_hidden</find>
-      <find>pdb</find>
-      <find>VAE_decoder</find>
-      <find>use_cuda</find>
-      <find>tb_writer</find>
       <find>self.optimizer_VAE</find>
       <find>一声歌尽路迢迢</find>
       <find>pre_test_process</find>
       <find>maxlen</find>
       <find>api</find>
       <find>LoadPretrainPoem</find>
-      <find>bow_project</find>
       <find>不须徼福渡河星</find>
       <find>不知月夜魂归处</find>
-      <find>self.hidden_size</find>
+      <find>一夜挽回天下</find>
       <find>save</find>
+      <find>forward_only</find>
+      <find>_prepare_sentiment_batch</find>
+      <find>[&quot;init_decoder_hidden&quot;]</find>
+      <find>争渡</find>
+      <find>Data</find>
+      <find>vocab_corpus</find>
+      <find>load_</find>
+      <find>with_sentiment</find>
+      <find>bow_project</find>
+      <find>init_hidden</find>
+      <find>&quot;init_hidden&quot;</find>
+      <find>init_decoder</find>
+      <find>reconstr</find>
+      <find>init_valid</find>
+      <find>pdb</find>
+      <find>self.optimizer_AE</find>
+      <find>self.hidden_size</find>
+      <find>_prepare_batch</find>
+      <find>global_t += 1</find>
+      <find>sent_labels</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -173,23 +207,24 @@
         <option value="$PROJECT_DIR$/data/sentiment_data/negative.txt" />
         <option value="$PROJECT_DIR$/data/sentiment_data/neutral.txt" />
         <option value="$PROJECT_DIR$/data/sentiment_data/positive.txt" />
-        <option value="$PROJECT_DIR$/data_apis/corpus.py" />
-        <option value="$PROJECT_DIR$/data_apis/data_process.py" />
         <option value="$PROJECT_DIR$/modules.py" />
-        <option value="$PROJECT_DIR$/data_apis/data_utils.py" />
         <option value="$PROJECT_DIR$/models/cvae.py" />
+        <option value="$PROJECT_DIR$/data_apis/corpus.py" />
+        <option value="$PROJECT_DIR$/data_apis/data_utils.py" />
+        <option value="$PROJECT_DIR$/data_apis/data_process.py" />
         <option value="$PROJECT_DIR$/train.py" />
         <option value="$PROJECT_DIR$/configs.py" />
         <option value="$PROJECT_DIR$/models/multiVAE.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="12" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="293" />
     <option name="y" value="25" />
-    <option name="width" value="1400" />
-    <option name="height" value="875" />
+    <option name="width" value="1062" />
+    <option name="height" value="872" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -226,6 +261,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -316,21 +352,21 @@
       <option name="presentableId" value="Default" />
       <updated>1611208471592</updated>
       <workItem from="1611208473387" duration="19000" />
-      <workItem from="1611208523072" duration="31756000" />
+      <workItem from="1611208523072" duration="50576000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31775000" />
+    <option name="totallyTimeSpent" value="50595000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="12" y="25" width="1400" height="875" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49868074" weight="0.26186943" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49868074" weight="0.02818991" />
       <window_info id="Structure" order="1" sideWeight="0.5013193" side_tool="true" weight="0.12833828" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="File Transfer" weight="0.28364116" />
+      <window_info anchor="bottom" id="File Transfer" weight="0.28333333" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -381,100 +417,98 @@
     <entry file="file://$PROJECT_DIR$/data/train_data.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_apis/data_process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="309" selection-start-line="309" selection-end-line="309" />
-          <folding>
-            <element signature="e#194#1227#0" />
-            <element signature="e#1265#2906#0" />
-            <element signature="e#2943#3539#0" />
-            <element signature="e#3580#5587#0" />
-            <element signature="e#5659#12752#0" />
-            <element signature="e#12792#12879#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/sentiment_data/out_neg.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/sentiment_data/positive.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="51974" column="8" selection-start-line="51974" selection-start-column="8" selection-end-line="51974" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/sentiment_data/negative.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="51931" column="8" lean-forward="true" selection-start-line="51931" selection-start-column="8" selection-end-line="51931" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data/sentiment_data/neutral.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="4012" column="7" selection-start-line="4012" selection-end-line="4012" selection-end-column="7" />
+        <state>
+          <caret column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="215" column="18" lean-forward="true" selection-start-line="215" selection-start-column="18" selection-end-line="215" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modules.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="297" column="24" selection-start-line="297" selection-start-column="24" selection-end-line="297" selection-end-column="24" />
+        <state relative-caret-position="422">
+          <caret line="147" column="31" selection-start-line="147" selection-start-column="25" selection-end-line="147" selection-end-column="31" />
           <folding>
             <element signature="e#2068#4821#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_apis/data_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="66" column="26" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_apis/corpus.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="171" column="22" selection-start-line="171" selection-start-column="6" selection-end-line="171" selection-end-column="22" />
-          <folding>
-            <element signature="e#24#44#0" expanded="true" />
-            <element signature="e#1449#1956#0" />
-            <element signature="e#2890#3192#0" />
-            <element signature="e#4214#4581#0" />
+            <element signature="e#14045#19077#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/cvae.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+        <state relative-caret-position="259">
+          <caret line="228" column="8" selection-start-line="228" selection-start-column="8" selection-end-line="228" selection-end-column="8" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-            <element signature="e#6079#10143#0" />
-            <element signature="e#10266#13439#0" />
-            <element signature="e#13561#15424#0" />
-            <element signature="e#15495#16371#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/sentiment_data/positive.txt">
+    <entry file="file://$PROJECT_DIR$/data_apis/data_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="51999" column="8" selection-start-line="51999" selection-start-column="8" selection-end-line="51999" selection-end-column="8" />
+        <state relative-caret-position="792">
+          <caret line="168" column="39" selection-start-line="168" selection-start-column="39" selection-end-line="168" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/sentiment_data/negative.txt">
+    <entry file="file://$PROJECT_DIR$/data_apis/corpus.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="51999" column="8" selection-start-line="51999" selection-start-column="8" selection-end-line="51999" selection-end-column="8" />
+        <state relative-caret-position="315">
+          <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding>
+            <element signature="e#24#44#0" expanded="true" />
+            <element signature="e#1449#1956#0" />
+            <element signature="e#2890#3192#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/helper.py">
+    <entry file="file://$PROJECT_DIR$/data_apis/data_process.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="145" lean-forward="true" selection-start-line="145" selection-end-line="145" />
+        <state relative-caret-position="348">
+          <caret line="327" column="22" selection-start-line="327" selection-start-column="22" selection-end-line="327" selection-end-column="22" />
+          <folding>
+            <element signature="e#194#1227#0" />
+            <element signature="e#2943#3539#0" />
+            <element signature="e#3580#5587#0" />
+            <element signature="e#5659#13349#0" />
+            <element signature="e#5659#5706#1" />
+            <element signature="e#5995#8952#0" />
+            <element signature="e#9035#12652#0" />
+            <element signature="e#12792#12879#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="269" column="24" lean-forward="true" selection-start-line="269" selection-start-column="24" selection-end-line="269" selection-end-column="24" />
+        <state relative-caret-position="1971">
+          <caret line="276" column="28" selection-start-line="276" selection-start-column="28" selection-end-line="276" selection-end-column="28" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -483,20 +517,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/configs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="39" column="18" lean-forward="true" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+        <state relative-caret-position="239">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/multiVAE.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="93" column="64" selection-start-line="93" selection-start-column="64" selection-end-line="93" selection-end-column="64" />
+        <state relative-caret-position="467">
+          <caret line="307" column="45" lean-forward="true" selection-start-line="307" selection-start-column="45" selection-end-line="307" selection-end-column="45" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-            <element signature="e#5146#7215#0" />
-            <element signature="e#7292#9204#0" />
-            <element signature="e#13967#16964#0" />
+            <element signature="e#4754#4830#0" />
           </folding>
         </state>
       </provider>
