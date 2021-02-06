@@ -281,12 +281,12 @@ def write_predict_result_to_file(titles, predict_results, sentiment_result, outp
     assert len(predict_results) == len(sentiment_result) == 4 * len(titles)
     ptr = 0
     for i in range(len(titles)):
-        output_file.write('{}\n'.format(titles[i]))
+        # output_file.write('{}\n'.format(titles[i]))
         for _ in range(4):
             output_file.write('{} {}\n'.format("".join([token_to_word[token] for token in predict_results[ptr]]),
                                                sentiment_result[ptr]))
             ptr += 1
-        output_file.write('\n')
+        # output_file.write('\n')
 
 
 if __name__ == "__main__":

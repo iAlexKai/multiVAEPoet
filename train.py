@@ -202,8 +202,9 @@ def main():
         rev_vocab = {vocab[idx]: idx for idx in range(len(vocab))}
 
     if not pretrain:
-        assert config.reload_model
-        model = load_model(config.model_name)
+        pass
+        # assert config.reload_model
+        # model = load_model(config.model_name)
     else:
         if args.model == "multiVAE":
             model = multiVAE(config=config, vocab=vocab, rev_vocab=rev_vocab)
@@ -343,10 +344,10 @@ def main():
 
         # forward_only 测试
     else:
-        expname = 'sentInput'
-        time = '202101191105'
+        expname = 'trainVAE'
+        time = '202101231631'
 
-        model = load_model('./output/{}/{}/model_global_t_13596_epoch3.pckl'.format(expname, time))
+        model = load_model('./output/{}/{}/model_global_t_26250_epoch9.pckl'.format(expname, time))
         test_loader.epoch_init(test_config.batch_size, shuffle=False)
         if not os.path.exists('./output/{}/{}/test/'.format(expname, time)):
             os.mkdir('./output/{}/{}/test/'.format(expname, time))
@@ -359,11 +360,12 @@ def main():
                        open('./output/{}/{}/test/output_2.txt'
                             .format(expname, time),
                             'w')]
-
         poem_count = 0
         predict_results = {0: [], 1: [], 2: []}
         titles = {0: [], 1: [], 2: []}
         sentiment_result = {0: [], 1: [], 2: []}
+        # sent_dict = {0: ['0', '1', '1', '0'], 1: ['2', '1', '2', '2'], 2: ['1', '0', '1', '2']}
+        sent_dict = {0: ['0', '0', '0', '0'], 1: ['1', '1', '1', '1'], 2: ['2', '2', '2', '2']}
         # Get all poem predictions
         while True:
             model.eval()
@@ -377,7 +379,11 @@ def main():
             title_tensor = to_tensor(title_list)
             # test函数将当前batch对应的这首诗decode出来，记住每次decode的输入context是上一次的结果
             for i in range(3):
-                output_poem, output_tokens = model.test(title_tensor, title_list, mask_type=str(i))
+                sent_labels = sent_dict[i]
+                for _ in range(4):
+                    sent_labels.append(str(i))
+
+                output_poem, output_tokens = model.test(title_tensor, title_list, sent_labels=sent_labels)
 
                 titles[i].append(output_poem.strip().split('\n')[0])
                 predict_results[i] += (np.array(output_tokens)[:, :7].tolist())
@@ -389,11 +395,12 @@ def main():
         pos = defaultdict(int)
         total = defaultdict(int)
         for i in range(3):
-            _, neg[i], neu[i], pos[i] = test_sentiment(predict_results[i])
+            cur_sent_result, neg[i], neu[i], pos[i] = test_sentiment(predict_results[i])
+            sentiment_result[i] = cur_sent_result
             total[i] = neg[i] + neu[i] + pos[i]
 
         for i in range(3):
-            print("%d%%\t%d%%\t%d%%" % (neg * 100 / total, neu * 100 / total, pos * 100 / total))
+            print("%d%%\t%d%%\t%d%%" % (neg[i] * 100 / total[i], neu[i] * 100 / total[i], pos[i] * 100 / total[i]))
 
         for i in range(3):
             write_predict_result_to_file(titles[i], predict_results[i], sentiment_result[i], output_file[i])
